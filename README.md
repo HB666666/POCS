@@ -28,3 +28,5 @@
 28. 用友NC downCourseWare任意文件读取
 29. 大华 DSS 数字监控系统 user_edit.action 信息泄露
 30. PHP CGI Windows平台远程代码执行漏洞（CVE-2024-4577）
+31. 海康威视综合安防AutoLoginTicket 远程代码执行
+32. 锐捷校园网自助服务系统login_judge任意文件读取
