@@ -30,7 +30,8 @@
 30. PHP CGI Windows平台远程代码执行漏洞（CVE-2024-4577）
 31. 海康威视综合安防AutoLoginTicket 远程代码执行
 32. 锐捷校园网自助服务系统login_judge任意文件读取
-
+33. I Doc View 在线文档预览 qJvqhFt.json 任意文件读取
+34. Rejetto HTTP File Server远程代码执行漏洞CVE-2024-23692
 
 
 
