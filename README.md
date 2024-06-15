@@ -18,26 +18,18 @@
 18. 方正全媒体采编系统assess-syn接口存在信息泄露漏洞
 19. 用友GRP-U8 u8qx SQL注入漏洞
 20. 金蝶云星空 User 反序列化漏洞
-21. 移动云控制台存在任意文件读取
-22. 智邦国际ERP系统（生产版）GetPersonalSealData SQL注入
-23. 海康威视综合安防download任意文件读取
-24. 宏景HCM-pos_dept_post-delay-sql注入漏洞
-25. SpringBlade tenantlist SQL 注入
-26. 用友NC pagesServlet SQL注入致RCE
-27. 宏景HCM openFile任意文件读取
-28. 用友NC downCourseWare任意文件读取
-29. 大华 DSS 数字监控系统 user_edit.action 信息泄露
-30. PHP CGI Windows平台远程代码执行漏洞（CVE-2024-4577）
-31. 海康威视综合安防AutoLoginTicket 远程代码执行
-32. 锐捷校园网自助服务系统login_judge任意文件读取
-33. I Doc View 在线文档预览 qJvqhFt.json 任意文件读取
-34. Rejetto HTTP File Server远程代码执行漏洞CVE-2024-23692
-
-
-
-
-
-        欢迎关注公众号浅梦安全！！！
-
-![6017e4d55b8bd80eb79047ce4051aeb](https://github.com/onewinner/POCS/assets/94044430/0fba0d53-fe95-4206-92ce-20f91d4ded75)
-
+21. 智邦国际ERP系统（生产版）GetPersonalSealData SQL注入
+22. 海康威视综合安防download任意文件读取
+23. 宏景HCM-pos_dept_post-delay-sql注入漏洞
+24. SpringBlade tenantlist SQL 注入
+25. 用友NC pagesServlet SQL注入致RCE
+26. 宏景HCM openFile任意文件读取
+27. 用友NC downCourseWare任意文件读取
+28. 大华 DSS 数字监控系统 user_edit.action 信息泄露
+29. PHP CGI Windows平台远程代码执行漏洞（CVE-2024-4577）
+30. 海康威视综合安防AutoLoginTicket 远程代码执行
+31. 锐捷校园网自助服务系统login_judge任意文件读取
+32. I Doc View 在线文档预览 qJvqhFt.json 任意文件读取
+33. Rejetto HTTP File Server远程代码执行漏洞CVE-2024-23692
+34. 飞企互联FE企业运营管理平台 treeXml.jsp SQL注入
+35. 飞企互联-FE企业运营管理平台uploadAttachmentServlet 任意文件上传漏洞
