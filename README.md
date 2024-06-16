@@ -33,3 +33,6 @@
 33. Rejetto HTTP File Server远程代码执行漏洞CVE-2024-23692
 34. 飞企互联FE企业运营管理平台 treeXml.jsp SQL注入
 35. 飞企互联-FE企业运营管理平台uploadAttachmentServlet 任意文件上传漏洞
+36. 电信网关配置管理系统 del_file.php存在命令执行
+37. 用友NC oacoSchedulerEventsisAgentLimit SQL注入
+38. 用友NC uploadControluploadFile 文件上传致RCE
