@@ -36,3 +36,7 @@
 36. 电信网关配置管理系统 del_file.php存在命令执行
 37. 用友NC oacoSchedulerEventsisAgentLimit SQL注入
 38. 用友NC uploadControluploadFile 文件上传致RCE
+39. SolarWinds Serv-U 目录遍历(CVE-2024-28995)
+40. 致远互联FE协作办公平台 ncsubjass SQL注入
+41. Fastadmin框架lang任意文件读取
+42. 真内控国产化开发平台 preview 任意文件读取
