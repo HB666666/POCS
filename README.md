@@ -40,3 +40,6 @@
 40. 致远互联FE协作办公平台 ncsubjass SQL注入
 41. Fastadmin框架lang任意文件读取
 42. 真内控国产化开发平台 preview 任意文件读取
+43. 锐捷统一上网行为管理与审计系统naborTable命令执行
+44. 华测监测预警系统2.2 UserEdit.aspx SQL注入致RCE
+45. 通天星CMSV6 pointManage存在SQL注入可写入文件RCE
