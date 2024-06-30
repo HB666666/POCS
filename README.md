@@ -43,6 +43,12 @@
 43. 锐捷统一上网行为管理与审计系统naborTable命令执行
 44. 华测监测预警系统2.2 UserEdit.aspx SQL注入致RCE
 45. 通天星CMSV6 pointManage存在SQL注入可写入文件RCE
+46. 极企智能办公路由jumper接口存在RCE
+47. 用友NC UFIDA ELTextFile.load.d任意文件读取
+48. 碧海威 L7多款网络产品存在命令执行漏洞
+49. 金和OA C6 oaplusrangedownloadfile存在任意文件读取
+50. 致远互联FE协作办公平台 codeMoreWidget SQL注入致RCE
+51. 飞企互联FE企业运营管理平台多个接口存在 SQL注入
 
 欢迎关注本公众号，每日更新最新漏洞情报:
 
