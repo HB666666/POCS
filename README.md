@@ -49,6 +49,7 @@
 49. 金和OA C6 oaplusrangedownloadfile存在任意文件读取
 50. 致远互联FE协作办公平台 codeMoreWidget SQL注入致RCE
 51. 飞企互联FE企业运营管理平台多个接口存在 SQL注入
+52. GeoServer 最新前台RCE wfs 远程代码执行漏洞(CVE-2024-36401)
 
 欢迎关注本公众号，每日更新最新漏洞情报:
 
